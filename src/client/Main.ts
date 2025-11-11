@@ -3,7 +3,8 @@
  * Initializes the game client and rendering
  */
 
-import { Application } from 'pixi.js';
+import { Application, Text } from 'pixi.js';
+import * as PIXI from 'pixi.js';
 
 class ZombieFrontClient {
   private app: Application;
@@ -200,7 +201,7 @@ class ZombieFrontClient {
    */
   private initGameGraphics() {
     // Create a simple welcome text
-    const text = new PIXI.Text({
+    const text = new Text({
       text: '🧟 ZombieFront.io\n\nGame Starting...',
       style: {
         fontFamily: 'Arial',
@@ -238,7 +239,7 @@ class ZombieFrontClient {
     // For now, just rotating text if it exists
     if (this.app.stage.children.length > 0) {
       this.app.stage.children.forEach((child) => {
-        if (child instanceof PIXI.Text) {
+        if (child instanceof Text) {
           child.rotation += 0.001 * deltaTime;
         }
       });
