@@ -1,28 +1,102 @@
 {
-    "name": "landing-pages",
-    "version": "1.0.0",
-    "description": "beautiful landing pages",
-    "main": "index.js",
-    "scripts": {
-      "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
-      "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i tailwind.css -o tailwind-build.css --minify",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "landing",
-      "pages",
-      "motion",
-      "design",
-      "websites"
-    ],
-    "author": "Paul",
-    "license": "MIT",
-    "devDependencies": {
-      "tailwindcss": "^3.4.1"
-    },
-    "dependencies": {
-      "postcss": "^8.4.33",
-      "postcss-simple-vars": "^7.0.1"
-    }
+  "name": "zombiefront",
+  "version": "0.1.0",
+  "description": "ZombieFront.io - Real-time multiplayer zombie survival strategy game based on OpenFront.io",
+  "type": "module",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run start:server-dev\" \"npm run start:client\"",
+    "dev:staging": "concurrently \"npm run start:server-dev\" \"npm run start:client:staging\"",
+    "dev:prod": "concurrently \"npm run start:server-dev\" \"npm run start:client:prod\"",
+    "start:server": "node --loader ts-node/esm src/server/index.ts",
+    "start:server-dev": "node --loader ts-node/esm --watch src/server/index.ts",
+    "start:client": "webpack serve --mode development --config webpack.config.js",
+    "start:client:staging": "webpack serve --mode development --env staging",
+    "start:client:prod": "webpack serve --mode development --env production",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "perf": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=perf",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "gen-maps": "node --loader ts-node/esm map-generator/index.ts",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "zombie",
+    "survival",
+    "strategy",
+    "multiplayer",
+    "real-time",
+    "game",
+    "openfront",
+    "typescript",
+    "websocket"
+  ],
+  "author": "ZombieFront Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlashPitch/claralanding.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "winston": "^3.11.0",
+    "compression": "^1.7.4",
+    "uuid": "^9.0.1",
+    "jose": "^5.1.3",
+    "zod": "^3.22.4",
+    "howler": "^2.2.4"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.100",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "@types/uuid": "^9.0.7",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.0",
+    "pixi.js": "^8.0.0",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^7.3.4",
+    "prettier": "^3.1.1",
+    "style-loader": "^3.3.3",
+    "swc-loader": "^0.2.3",
+    "tailwindcss": "^3.4.1",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=10.9.2"
   }
+}
   
