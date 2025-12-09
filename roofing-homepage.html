@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Toiture - Artisan Couvreur de Prestige</title>
+    <meta name="description" content="Artisan couvreur RGE - Couverture, zinguerie, isolation. 25 ans d'expérience au service de votre toiture.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="tailwind-build.css">
+    <link rel="stylesheet" href="roofing-styles.css">
+</head>
+<body class="tw-bg-beige-natural tw-text-slate-dark tw-font-body">
+
+    <!-- Navigation Premium -->
+    <nav class="nav-header tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-50 tw-transition-all tw-duration-300">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-flex tw-justify-between tw-items-center tw-h-20">
+                <!-- Logo -->
+                <div class="tw-flex tw-items-center tw-gap-3">
+                    <div class="logo-container">
+                        <svg class="tw-w-12 tw-h-12" viewBox="0 0 100 100" fill="none">
+                            <path d="M50 10L90 35V75L50 90L10 75V35L50 10Z" fill="#dc6b4a"/>
+                            <path d="M50 20L80 40V70L50 80L20 70V40L50 20Z" fill="#d4af37"/>
+                            <path d="M30 45L50 35L70 45V60L50 70L30 60V45Z" fill="#1e293b"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="tw-text-xl tw-font-heading tw-font-bold tw-text-slate-dark">Excellence Toiture</div>
+                        <div class="tw-text-xs tw-text-terracotta tw-font-heading">Artisan Couvreur RGE</div>
+                    </div>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="tw-hidden lg:tw-flex tw-items-center tw-gap-8">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#realisations" class="nav-link">Réalisations</a>
+                    <a href="#expertise" class="nav-link">Expertise</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="tel:+33123456789" class="btn-primary">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>01 23 45 67 89</span>
+                    </a>
+                </div>
+
+                <!-- Menu Mobile Toggle -->
+                <button id="mobile-menu-toggle" class="lg:tw-hidden tw-text-slate-dark tw-text-2xl">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="mobile-menu tw-hidden lg:tw-hidden tw-bg-white tw-shadow-xl">
+            <div class="tw-px-4 tw-py-6 tw-space-y-4">
+                <a href="#services" class="tw-block tw-py-3 tw-text-lg tw-font-heading tw-text-slate-dark tw-border-b tw-border-gray-200">Services</a>
+                <a href="#realisations" class="tw-block tw-py-3 tw-text-lg tw-font-heading tw-text-slate-dark tw-border-b tw-border-gray-200">Réalisations</a>
+                <a href="#expertise" class="tw-block tw-py-3 tw-text-lg tw-font-heading tw-text-slate-dark tw-border-b tw-border-gray-200">Expertise</a>
+                <a href="#contact" class="tw-block tw-py-3 tw-text-lg tw-font-heading tw-text-slate-dark tw-border-b tw-border-gray-200">Contact</a>
+                <a href="tel:+33123456789" class="btn-primary tw-w-full tw-text-center tw-mt-4">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>01 23 45 67 89</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section tw-relative tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
+        <!-- Background parallax -->
+        <div class="hero-bg tw-absolute tw-inset-0 tw-z-0"></div>
+        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-slate-950/70 tw-via-slate-dark/50 tw-to-slate-dark/80 tw-z-10"></div>
+
+        <!-- Content -->
+        <div class="tw-relative tw-z-20 tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8 tw-text-center">
+            <div class="hero-content">
+                <div class="tw-inline-block tw-mb-6 tw-px-6 tw-py-2 tw-bg-gold-accent/20 tw-backdrop-blur-sm tw-rounded-full tw-border tw-border-gold-accent/30">
+                    <span class="tw-text-gold-accent tw-font-heading tw-font-semibold tw-tracking-wide">✦ Artisan Certifié RGE ✦</span>
+                </div>
+
+                <h1 class="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-heading tw-font-bold tw-text-white tw-mb-6 tw-leading-tight">
+                    L'Excellence au Service<br>
+                    <span class="tw-text-gold-accent">de Votre Toiture</span>
+                </h1>
+
+                <p class="tw-text-xl md:tw-text-2xl tw-text-beige-natural tw-mb-10 tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
+                    Plus de 25 ans d'expertise en couverture, zinguerie et rénovation.
+                    Nous transformons votre toit en chef-d'œuvre architectural.
+                </p>
+
+                <div class="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-justify-center tw-items-center">
+                    <a href="#contact" class="btn-hero-primary">
+                        <span>Devis Gratuit</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="#realisations" class="btn-hero-secondary">
+                        <i class="bi bi-images"></i>
+                        <span>Nos Réalisations</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator tw-absolute tw-bottom-10 tw-left-1/2 tw--translate-x-1/2 tw-z-20">
+            <div class="tw-w-6 tw-h-10 tw-border-2 tw-border-white/50 tw-rounded-full tw-flex tw-justify-center tw-p-2">
+                <div class="tw-w-1 tw-h-3 tw-bg-white tw-rounded-full scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barre de Réassurance -->
+    <section class="tw-py-8 tw-bg-white tw-border-y tw-border-gray-200">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-6 md:tw-gap-8">
+                <div class="trust-badge tw-text-center">
+                    <div class="tw-text-4xl tw-text-terracotta tw-mb-2">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-1">25+</div>
+                    <div class="tw-text-sm tw-text-gray-600">Années d'Expérience</div>
+                </div>
+
+                <div class="trust-badge tw-text-center">
+                    <div class="tw-text-4xl tw-text-terracotta tw-mb-2">
+                        <i class="bi bi-shield-fill-check"></i>
+                    </div>
+                    <div class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-1">100%</div>
+                    <div class="tw-text-sm tw-text-gray-600">Garantie Décennale</div>
+                </div>
+
+                <div class="trust-badge tw-text-center">
+                    <div class="tw-text-4xl tw-text-terracotta tw-mb-2">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-1">RGE</div>
+                    <div class="tw-text-sm tw-text-gray-600">Certifié Qualibat</div>
+                </div>
+
+                <div class="trust-badge tw-text-center">
+                    <div class="tw-text-4xl tw-text-terracotta tw-mb-2">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-1">4.9/5</div>
+                    <div class="tw-text-sm tw-text-gray-600">Satisfaction Client</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Premium -->
+    <section id="services" class="tw-py-20 tw-bg-beige-light">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-text-center tw-mb-16">
+                <span class="tw-inline-block tw-px-4 tw-py-2 tw-bg-terracotta/10 tw-text-terracotta tw-rounded-full tw-text-sm tw-font-heading tw-font-semibold tw-mb-4">
+                    NOS SERVICES
+                </span>
+                <h2 class="tw-text-4xl md:tw-text-5xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-4">
+                    Un Savoir-Faire<br><span class="tw-text-terracotta">Complet & Moderne</span>
+                </h2>
+                <p class="tw-text-xl tw-text-gray-600 tw-max-w-3xl tw-mx-auto">
+                    De la couverture traditionnelle aux solutions écologiques, nous maîtrisons tous les aspects de votre toiture.
+                </p>
+            </div>
+
+            <div class="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Couverture Traditionnelle</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Tuiles, ardoises, zinc... Pose et rénovation dans le respect des traditions et normes actuelles.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Toiture Terrasse</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Étanchéité, isolation et aménagement de toits plats pour habitat moderne et commercial.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-thermometer-half"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Isolation Thermique</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Isolation performante pour réduire vos factures énergétiques et améliorer votre confort.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-droplet-fill"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Zinguerie</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Gouttières, chéneaux, habillages... Travaux de zinc sur mesure pour une évacuation parfaite.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Rénovation Patrimoine</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Restauration de toitures anciennes avec respect du patrimoine architectural et historique.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="tw-w-16 tw-h-16 tw-bg-terracotta tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-3xl tw-mb-6">
+                        <i class="bi bi-brightness-high-fill"></i>
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-3">Panneaux Solaires</h3>
+                    <p class="tw-text-gray-600 tw-mb-4">
+                        Installation de solutions photovoltaïques intégrées pour une toiture productive et écologique.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        <span>En savoir plus</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Réalisations -->
+    <section id="realisations" class="tw-py-20 tw-bg-slate-dark">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-text-center tw-mb-16">
+                <span class="tw-inline-block tw-px-4 tw-py-2 tw-bg-gold-accent/20 tw-text-gold-accent tw-rounded-full tw-text-sm tw-font-heading tw-font-semibold tw-mb-4">
+                    PORTFOLIO
+                </span>
+                <h2 class="tw-text-4xl md:tw-text-5xl tw-font-heading tw-font-bold tw-text-white tw-mb-4">
+                    Nos Plus Belles<br><span class="tw-text-gold-accent">Réalisations</span>
+                </h2>
+                <p class="tw-text-xl tw-text-beige-natural tw-max-w-3xl tw-mx-auto">
+                    Découvrez nos projets de couverture résidentielle, commerciale et patrimoniale.
+                </p>
+            </div>
+
+            <!-- Filtres -->
+            <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-4 tw-mb-12">
+                <button class="filter-btn active" data-filter="all">Tous les Projets</button>
+                <button class="filter-btn" data-filter="residential">Résidentiel</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="heritage">Patrimoine</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1504615755583-2916b52192a3?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Villa Contemporaine</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Toiture ardoise avec zinguerie cuivre</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Immeuble de Bureaux</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Toiture terrasse végétalisée 2000m²</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="heritage">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Château XVIIIe</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Restauration ardoise patrimoine classé</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Maison Moderne</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Toiture zinc + panneaux solaires intégrés</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Rénovation Complète</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Tuiles terre cuite + isolation renforcée</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&h=600&fit=crop');">
+                            <div class="gallery-overlay">
+                                <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-white tw-mb-2">Centre Commercial</h3>
+                                <p class="tw-text-beige-natural tw-mb-4">Étanchéité membrane EPDM 5000m²</p>
+                                <button class="tw-px-4 tw-py-2 tw-bg-gold-accent tw-text-slate-dark tw-rounded-lg tw-font-heading tw-font-semibold">
+                                    Voir le projet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Nous Choisir -->
+    <section id="expertise" class="tw-py-20 tw-bg-beige-natural tw-relative tw-overflow-hidden">
+        <!-- Pattern background -->
+        <div class="tw-absolute tw-inset-0 tw-opacity-5 tw-bg-hero-pattern"></div>
+
+        <div class="tw-relative tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-text-center tw-mb-16">
+                <span class="tw-inline-block tw-px-4 tw-py-2 tw-bg-terracotta/10 tw-text-terracotta tw-rounded-full tw-text-sm tw-font-heading tw-font-semibold tw-mb-4">
+                    NOTRE DIFFÉRENCE
+                </span>
+                <h2 class="tw-text-4xl md:tw-text-5xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-4">
+                    Pourquoi Nous<br><span class="tw-text-terracotta">Faire Confiance ?</span>
+                </h2>
+            </div>
+
+            <div class="tw-grid md:tw-grid-cols-2 tw-gap-12 tw-items-center">
+                <div class="tw-space-y-8">
+                    <div class="why-card">
+                        <div class="tw-flex tw-gap-4">
+                            <div class="tw-flex-shrink-0 tw-w-14 tw-h-14 tw-bg-terracotta tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-2xl">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="tw-text-xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-2">Expertise Reconnue</h3>
+                                <p class="tw-text-gray-600">
+                                    Plus de 25 ans d'expérience dans tous types de couverture. Formation continue de nos équipes aux dernières techniques et normes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="tw-flex tw-gap-4">
+                            <div class="tw-flex-shrink-0 tw-w-14 tw-h-14 tw-bg-terracotta tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-2xl">
+                                <i class="bi bi-gem"></i>
+                            </div>
+                            <div>
+                                <h3 class="tw-text-xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-2">Matériaux Premium</h3>
+                                <p class="tw-text-gray-600">
+                                    Sélection rigoureuse de matériaux nobles et durables auprès des meilleurs fabricants français et européens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="tw-flex tw-gap-4">
+                            <div class="tw-flex-shrink-0 tw-w-14 tw-h-14 tw-bg-terracotta tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-2xl">
+                                <i class="bi bi-calendar-check-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="tw-text-xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-2">Respect des Délais</h3>
+                                <p class="tw-text-gray-600">
+                                    Planning précis et tenu. Nous nous engageons sur les délais annoncés avec transparence totale sur l'avancement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="tw-flex tw-gap-4">
+                            <div class="tw-flex-shrink-0 tw-w-14 tw-h-14 tw-bg-terracotta tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-text-white tw-text-2xl">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div>
+                                <h3 class="tw-text-xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-2">SAV Réactif</h3>
+                                <p class="tw-text-gray-600">
+                                    Service après-vente disponible et réactif. Garanties étendues et suivi de votre toiture dans la durée.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tw-relative tw-h-[600px]">
+                    <div class="tw-absolute tw-top-0 tw-right-0 tw-w-[90%] tw-h-[48%] tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&h=400&fit=crop"
+                             alt="Artisan au travail"
+                             class="tw-w-full tw-h-full tw-object-cover">
+                    </div>
+                    <div class="tw-absolute tw-bottom-0 tw-left-0 tw-w-[90%] tw-h-[48%] tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&h=400&fit=crop"
+                             alt="Toiture moderne"
+                             class="tw-w-full tw-h-full tw-object-cover">
+                    </div>
+                    <div class="tw-absolute tw-top-1/2 tw-left-1/2 tw--translate-x-1/2 tw--translate-y-1/2 tw-bg-gold-accent tw-text-slate-dark tw-px-8 tw-py-6 tw-rounded-2xl tw-shadow-2xl tw-text-center tw-z-10">
+                        <div class="tw-text-4xl tw-font-heading tw-font-bold">500+</div>
+                        <div class="tw-text-sm tw-font-heading tw-font-semibold">Projets Réalisés</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Partenaires -->
+    <section class="tw-py-16 tw-bg-white">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-text-center tw-mb-12">
+                <h2 class="tw-text-3xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-2">
+                    Certifications & <span class="tw-text-terracotta">Partenaires</span>
+                </h2>
+                <p class="tw-text-gray-600">Labels qualité et fabricants de confiance</p>
+            </div>
+
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">RGE</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Qualibat</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Imerys</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Velux</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Zinc</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Eternit</div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">RGE</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="tw-w-32 tw-h-24 tw-bg-gray-100 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-font-heading tw-font-bold">Qualibat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Clients -->
+    <section class="tw-py-20 tw-bg-slate-dark">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-text-center tw-mb-16">
+                <span class="tw-inline-block tw-px-4 tw-py-2 tw-bg-gold-accent/20 tw-text-gold-accent tw-rounded-full tw-text-sm tw-font-heading tw-font-semibold tw-mb-4">
+                    TÉMOIGNAGES
+                </span>
+                <h2 class="tw-text-4xl md:tw-text-5xl tw-font-heading tw-font-bold tw-text-white tw-mb-4">
+                    Ce Que Disent<br><span class="tw-text-gold-accent">Nos Clients</span>
+                </h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-container" id="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="tw-flex tw-gap-1 tw-text-gold-accent tw-text-xl tw-mb-4">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-text-beige-natural tw-text-lg tw-mb-6 tw-leading-relaxed">
+                            "Travail impeccable sur la rénovation complète de notre toiture en ardoise. Équipe professionnelle, respectueuse et de bon conseil. Le résultat dépasse nos attentes !"
+                        </p>
+                        <div class="tw-flex tw-items-center tw-gap-4">
+                            <div class="tw-w-12 tw-h-12 tw-bg-gold-accent tw-rounded-full tw-flex tw-items-center tw-justify-center tw-text-slate-dark tw-font-heading tw-font-bold">
+                                MC
+                            </div>
+                            <div>
+                                <div class="tw-text-white tw-font-heading tw-font-semibold">Marie Dubois</div>
+                                <div class="tw-text-beige-natural tw-text-sm">Rénovation toiture - Paris 16e</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="tw-flex tw-gap-1 tw-text-gold-accent tw-text-xl tw-mb-4">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-text-beige-natural tw-text-lg tw-mb-6 tw-leading-relaxed">
+                            "Projet d'envergure mené avec rigueur et professionnalisme. Respect des délais, qualité irréprochable. Je recommande vivement pour tous travaux de toiture."
+                        </p>
+                        <div class="tw-flex tw-items-center tw-gap-4">
+                            <div class="tw-w-12 tw-h-12 tw-bg-gold-accent tw-rounded-full tw-flex tw-items-center tw-justify-center tw-text-slate-dark tw-font-heading tw-font-bold">
+                                JL
+                            </div>
+                            <div>
+                                <div class="tw-text-white tw-font-heading tw-font-semibold">Jean Lefebvre</div>
+                                <div class="tw-text-beige-natural tw-text-sm">Toiture terrasse - Neuilly</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="tw-flex tw-gap-1 tw-text-gold-accent tw-text-xl tw-mb-4">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-text-beige-natural tw-text-lg tw-mb-6 tw-leading-relaxed">
+                            "Excellente prestation pour l'installation de nos panneaux solaires. Conseil technique précieux, intégration esthétique parfaite. Très satisfaits !"
+                        </p>
+                        <div class="tw-flex tw-items-center tw-gap-4">
+                            <div class="tw-w-12 tw-h-12 tw-bg-gold-accent tw-rounded-full tw-flex tw-items-center tw-justify-center tw-text-slate-dark tw-font-heading tw-font-bold">
+                                SC
+                            </div>
+                            <div>
+                                <div class="tw-text-white tw-font-heading tw-font-semibold">Sophie Martin</div>
+                                <div class="tw-text-beige-natural tw-text-sm">Panneaux solaires - Versailles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="tw-flex tw-justify-center tw-gap-4 tw-mt-8">
+                    <button id="testimonial-prev" class="testimonial-nav-btn">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button id="testimonial-next" class="testimonial-nav-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tw-text-center tw-mt-8">
+                <a href="https://www.google.com/maps" target="_blank" class="tw-inline-flex tw-items-center tw-gap-2 tw-text-gold-accent hover:tw-text-gold-light tw-transition-colors tw-font-heading tw-font-semibold">
+                    <span>Voir tous nos avis Google</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contact" class="tw-relative tw-py-20 tw-bg-gradient-to-br tw-from-terracotta tw-to-terracotta-dark tw-overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="tw-absolute tw-inset-0 tw-opacity-10 tw-bg-hero-pattern"></div>
+
+        <div class="tw-relative tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center">
+                <div>
+                    <h2 class="tw-text-4xl md:tw-text-5xl tw-font-heading tw-font-bold tw-text-white tw-mb-6">
+                        Votre Projet Mérite<br>
+                        <span class="tw-text-gold-accent">l'Excellence</span>
+                    </h2>
+                    <p class="tw-text-xl tw-text-beige-light tw-mb-8 tw-leading-relaxed">
+                        Obtenez un devis gratuit et personnalisé sous 24h. Notre équipe d'experts est à votre écoute pour concrétiser votre projet de couverture.
+                    </p>
+
+                    <div class="tw-space-y-4 tw-mb-8">
+                        <div class="tw-flex tw-items-center tw-gap-4 tw-text-white">
+                            <div class="tw-w-10 tw-h-10 tw-bg-white/20 tw-rounded-lg tw-flex tw-items-center tw-justify-center">
+                                <i class="bi bi-check-lg tw-text-xl"></i>
+                            </div>
+                            <span class="tw-text-lg">Devis gratuit et sans engagement</span>
+                        </div>
+                        <div class="tw-flex tw-items-center tw-gap-4 tw-text-white">
+                            <div class="tw-w-10 tw-h-10 tw-bg-white/20 tw-rounded-lg tw-flex tw-items-center tw-justify-center">
+                                <i class="bi bi-check-lg tw-text-xl"></i>
+                            </div>
+                            <span class="tw-text-lg">Réponse sous 24h ouvrées</span>
+                        </div>
+                        <div class="tw-flex tw-items-center tw-gap-4 tw-text-white">
+                            <div class="tw-w-10 tw-h-10 tw-bg-white/20 tw-rounded-lg tw-flex tw-items-center tw-justify-center">
+                                <i class="bi bi-check-lg tw-text-xl"></i>
+                            </div>
+                            <span class="tw-text-lg">Garantie décennale incluse</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:+33123456789" class="tw-inline-flex tw-items-center tw-gap-3 tw-bg-gold-accent hover:tw-bg-gold-light tw-text-slate-dark tw-px-8 tw-py-4 tw-rounded-xl tw-font-heading tw-font-bold tw-text-xl tw-transition-all tw-duration-300 tw-shadow-xl hover:tw-shadow-2xl hover:tw-scale-105">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>01 23 45 67 89</span>
+                    </a>
+                </div>
+
+                <div class="tw-bg-white tw-rounded-3xl tw-shadow-2xl tw-p-8">
+                    <h3 class="tw-text-2xl tw-font-heading tw-font-bold tw-text-slate-dark tw-mb-6">
+                        Demande de Devis Gratuit
+                    </h3>
+
+                    <form id="contact-form" class="tw-space-y-4">
+                        <div>
+                            <label class="tw-block tw-text-sm tw-font-heading tw-font-semibold tw-text-slate-dark tw-mb-2">
+                                Nom complet *
+                            </label>
+                            <input type="text" name="name" required
+                                   class="tw-w-full tw-px-4 tw-py-3 tw-border tw-border-gray-300 tw-rounded-lg focus:tw-ring-2 focus:tw-ring-terracotta focus:tw-border-transparent tw-transition-all">
+                        </div>
+
+                        <div>
+                            <label class="tw-block tw-text-sm tw-font-heading tw-font-semibold tw-text-slate-dark tw-mb-2">
+                                Téléphone *
+                            </label>
+                            <input type="tel" name="phone" required
+                                   class="tw-w-full tw-px-4 tw-py-3 tw-border tw-border-gray-300 tw-rounded-lg focus:tw-ring-2 focus:tw-ring-terracotta focus:tw-border-transparent tw-transition-all">
+                        </div>
+
+                        <div>
+                            <label class="tw-block tw-text-sm tw-font-heading tw-font-semibold tw-text-slate-dark tw-mb-2">
+                                Email *
+                            </label>
+                            <input type="email" name="email" required
+                                   class="tw-w-full tw-px-4 tw-py-3 tw-border tw-border-gray-300 tw-rounded-lg focus:tw-ring-2 focus:tw-ring-terracotta focus:tw-border-transparent tw-transition-all">
+                        </div>
+
+                        <div>
+                            <label class="tw-block tw-text-sm tw-font-heading tw-font-semibold tw-text-slate-dark tw-mb-2">
+                                Type de projet *
+                            </label>
+                            <select name="project-type" required
+                                    class="tw-w-full tw-px-4 tw-py-3 tw-border tw-border-gray-300 tw-rounded-lg focus:tw-ring-2 focus:tw-ring-terracotta focus:tw-border-transparent tw-transition-all">
+                                <option value="">Sélectionnez...</option>
+                                <option value="couverture">Couverture traditionnelle</option>
+                                <option value="terrasse">Toiture terrasse</option>
+                                <option value="isolation">Isolation</option>
+                                <option value="zinguerie">Zinguerie</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="solaire">Panneaux solaires</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="tw-block tw-text-sm tw-font-heading tw-font-semibold tw-text-slate-dark tw-mb-2">
+                                Message
+                            </label>
+                            <textarea name="message" rows="4"
+                                      class="tw-w-full tw-px-4 tw-py-3 tw-border tw-border-gray-300 tw-rounded-lg focus:tw-ring-2 focus:tw-ring-terracotta focus:tw-border-transparent tw-transition-all"></textarea>
+                        </div>
+
+                        <button type="submit" class="tw-w-full tw-bg-terracotta hover:tw-bg-terracotta-dark tw-text-white tw-py-4 tw-rounded-xl tw-font-heading tw-font-bold tw-text-lg tw-transition-all tw-duration-300 tw-shadow-lg hover:tw-shadow-xl">
+                            Envoyer ma demande
+                        </button>
+
+                        <p class="tw-text-xs tw-text-gray-500 tw-text-center">
+                            Vos données sont protégées et ne seront jamais partagées.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <footer class="tw-bg-slate-950 tw-text-beige-natural tw-pt-16 tw-pb-8">
+        <div class="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
+            <div class="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-12 tw-mb-12">
+                <!-- Logo & Description -->
+                <div>
+                    <div class="tw-flex tw-items-center tw-gap-3 tw-mb-4">
+                        <svg class="tw-w-10 tw-h-10" viewBox="0 0 100 100" fill="none">
+                            <path d="M50 10L90 35V75L50 90L10 75V35L50 10Z" fill="#dc6b4a"/>
+                            <path d="M50 20L80 40V70L50 80L20 70V40L50 20Z" fill="#d4af37"/>
+                            <path d="M30 45L50 35L70 45V60L50 70L30 60V45Z" fill="#f5f1e8"/>
+                        </svg>
+                        <div class="tw-text-lg tw-font-heading tw-font-bold">Excellence Toiture</div>
+                    </div>
+                    <p class="tw-text-gray-400 tw-mb-4">
+                        Artisan couvreur certifié RGE, spécialiste de la couverture, zinguerie et isolation depuis plus de 25 ans.
+                    </p>
+                    <div class="tw-flex tw-gap-3">
+                        <a href="#" class="tw-w-10 tw-h-10 tw-bg-slate-dark tw-rounded-lg tw-flex tw-items-center tw-justify-center hover:tw-bg-terracotta tw-transition-colors">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="tw-w-10 tw-h-10 tw-bg-slate-dark tw-rounded-lg tw-flex tw-items-center tw-justify-center hover:tw-bg-terracotta tw-transition-colors">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="tw-w-10 tw-h-10 tw-bg-slate-dark tw-rounded-lg tw-flex tw-items-center tw-justify-center hover:tw-bg-terracotta tw-transition-colors">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="tw-text-white tw-font-heading tw-font-bold tw-text-lg tw-mb-4">Nos Services</h3>
+                    <ul class="tw-space-y-2">
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Couverture traditionnelle</a></li>
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Toiture terrasse</a></li>
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Isolation thermique</a></li>
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Zinguerie</a></li>
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Rénovation patrimoine</a></li>
+                        <li><a href="#services" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Panneaux solaires</a></li>
+                    </ul>
+                </div>
+
+                <!-- Liens Utiles -->
+                <div>
+                    <h3 class="tw-text-white tw-font-heading tw-font-bold tw-text-lg tw-mb-4">Liens Utiles</h3>
+                    <ul class="tw-space-y-2">
+                        <li><a href="#expertise" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">À propos</a></li>
+                        <li><a href="#realisations" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Réalisations</a></li>
+                        <li><a href="#contact" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Devis gratuit</a></li>
+                        <li><a href="#" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Blog</a></li>
+                        <li><a href="#" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">FAQ</a></li>
+                        <li><a href="#" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">Urgences</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="tw-text-white tw-font-heading tw-font-bold tw-text-lg tw-mb-4">Contact</h3>
+                    <ul class="tw-space-y-3">
+                        <li class="tw-flex tw-gap-3">
+                            <i class="bi bi-geo-alt-fill tw-text-terracotta"></i>
+                            <span class="tw-text-gray-400">123 Rue de la Toiture<br>75001 Paris</span>
+                        </li>
+                        <li class="tw-flex tw-gap-3">
+                            <i class="bi bi-telephone-fill tw-text-terracotta"></i>
+                            <a href="tel:+33123456789" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">01 23 45 67 89</a>
+                        </li>
+                        <li class="tw-flex tw-gap-3">
+                            <i class="bi bi-envelope-fill tw-text-terracotta"></i>
+                            <a href="mailto:contact@excellence-toiture.fr" class="tw-text-gray-400 hover:tw-text-gold-accent tw-transition-colors">contact@excellence-toiture.fr</a>
+                        </li>
+                        <li class="tw-flex tw-gap-3">
+                            <i class="bi bi-clock-fill tw-text-terracotta"></i>
+                            <span class="tw-text-gray-400">Lun-Ven: 8h-18h<br>Sam: 9h-12h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Zone d'intervention -->
+            <div class="tw-border-t tw-border-gray-800 tw-pt-8 tw-mb-8">
+                <h3 class="tw-text-white tw-font-heading tw-font-bold tw-text-lg tw-mb-4 tw-text-center">Zone d'Intervention</h3>
+                <p class="tw-text-gray-400 tw-text-center tw-max-w-3xl tw-mx-auto">
+                    Paris et toute l'Île-de-France : Paris (75), Hauts-de-Seine (92), Seine-Saint-Denis (93),
+                    Val-de-Marne (94), Essonne (91), Yvelines (78), Val-d'Oise (95), Seine-et-Marne (77)
+                </p>
+            </div>
+
+            <!-- Copyright -->
+            <div class="tw-border-t tw-border-gray-800 tw-pt-8 tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-gap-4">
+                <p class="tw-text-gray-500 tw-text-sm">
+                    © 2024 Excellence Toiture. Tous droits réservés.
+                </p>
+                <div class="tw-flex tw-gap-6 tw-text-sm">
+                    <a href="#" class="tw-text-gray-500 hover:tw-text-gold-accent tw-transition-colors">Mentions légales</a>
+                    <a href="#" class="tw-text-gray-500 hover:tw-text-gold-accent tw-transition-colors">Politique de confidentialité</a>
+                    <a href="#" class="tw-text-gray-500 hover:tw-text-gold-accent tw-transition-colors">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="roofing-script.js"></script>
+</body>
+</html>
